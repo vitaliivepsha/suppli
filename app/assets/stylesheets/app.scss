@@ -32,7 +32,8 @@ body {
       opacity: 1;
       transform: translateY(15px);
     }
-    main, footer{
+    main,
+    footer {
       filter: blur(3px);
     }
   }
@@ -70,15 +71,15 @@ main {
   z-index: 1;
   padding-top: 136px;
   overflow-x: hidden;
-  @include bp(md){
+  @include bp(md) {
     padding-top: 96px;
   }
-  @include bp(xs){
+  @include bp(xs) {
     padding-top: 66px;
   }
-  &:before{
+  &:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     max-height: 2220px;
@@ -103,7 +104,7 @@ main {
   }
 }
 
-.container{
+.container {
   width: 1170px;
   max-width: 100%;
   @include bp(lg) {
@@ -117,12 +118,12 @@ main {
   }
 }
 
-.container-lg{
+.container-lg {
   padding: 0 15px;
   margin: 0 auto;
   width: 1270px;
   max-width: 100%;
-  @media only screen and (max-width: 1359px){
+  @media only screen and (max-width: 1359px) {
     width: 1240px;
   }
   @include bp(xl) {
@@ -139,7 +140,7 @@ main {
   }
 }
 
-.btn{
+.btn {
   text-decoration: none;
   padding: 0 5px;
   height: 56px;
@@ -151,7 +152,7 @@ main {
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-  transition: linear .2s;
+  transition: linear 0.2s;
   font-weight: 500;
   font-size: 16.7159px;
   line-height: 25px;
@@ -161,39 +162,39 @@ main {
   box-shadow: none;
   outline: none !important;
   position: relative;
-  &-border{
+  &-border {
     padding: 0;
     border: 1px solid $purple;
     overflow: hidden;
-    span{
+    span {
       position: relative;
       z-index: 1;
       background: $gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    &:before{
+    &:before {
       position: absolute;
-      content: '';
+      content: "";
       width: 0;
       height: 100%;
       background: $gradient;
       top: 0;
       left: 0;
-      transition: linear .2s;
+      transition: linear 0.2s;
     }
-    &:hover{
-      background-image: linear-gradient(white, white), linear-gradient(to right, #8850F4, #6959FC);
+    &:hover {
+      background-image: linear-gradient(white, white), linear-gradient(to right, #8850f4, #6959fc);
       background-origin: border-box;
       background-clip: content-box, border-box;
       border-color: transparent;
       text-decoration: none;
       box-shadow: none;
       color: #fff;
-      &:before{
+      &:before {
         width: 100%;
       }
-      span{
+      span {
         -webkit-background-clip: unset;
         -webkit-text-fill-color: unset;
         background: transparent;
@@ -201,16 +202,16 @@ main {
       }
     }
   }
-  &-filled{
+  &-filled {
     background: $gradient;
-    &:hover{
+    &:hover {
       text-decoration: none;
       box-shadow: none;
       color: #fff;
       background: $reverse-gradient;
     }
   }
-  &:focus{
+  &:focus {
     text-decoration: none;
     outline: none;
     box-shadow: none;
@@ -218,7 +219,7 @@ main {
 }
 
 ::selection {
-  background: rgba(#8850F4, 0.35);
+  background: rgba(#8850f4, 0.35);
   color: #fff;
   text-shadow: none;
 }
@@ -246,3 +247,6 @@ main {
 @import "blog";
 @import "article";
 @import "404";
+
+// parts
+@import "page-top";
