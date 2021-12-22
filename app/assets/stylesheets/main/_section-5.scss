@@ -1,0 +1,215 @@
+.pricing-section{
+  padding: 65px 0 30px;
+  .section-pretitle{
+    text-align: center;
+  }
+  .section-title{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.pricing-descr{
+  margin: 0 auto 25px;
+  text-align: center;
+  max-width: 660px;
+  font-size: 16px;
+  line-height: 38px;
+  @include bp(xs){
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 35px;
+  }
+}
+
+.pricing-slider{
+  width: 1146px;
+  margin: 0 auto;
+  max-width: 100%;
+  @include bp(lg){
+    width: auto;
+    max-width: unset;
+    margin: 0 -15px;
+  }
+  .slick-list{
+    display: flex;
+    padding: 50px 0;
+    @include bp(xs){
+      padding: 0;
+      display: block;
+    }
+  }
+  .slick-track{
+    display: flex;
+    height: inherit;
+    @include bp(xs){
+      display: block;
+      height: auto;
+    }
+  }
+  .slick-slide{
+    padding: 0 16px;
+    height: 100%;
+    @include bp(lg){
+      padding: 0 15px;
+    }
+    @include bp(xs){
+      height: auto;
+    }
+    >div{
+      height: 100%;
+    }
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+    @include bp(xs){
+      margin-top: 20px;
+    }
+    li{
+      margin: 0 2px;
+      display: flex;
+      &.slick-active{
+        button{
+          background: $gradient;
+        }
+      }
+      button{
+        width: 9.4px;
+        height: 9.4px;
+        background: #E2E2E2;
+        border-radius: 1.04474px;
+        font-size: 0;
+        padding: 0;
+        border: none;
+      }
+    }
+  }
+  .pricing-item{
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(185, 185, 185, 0.5);
+    border-radius: 10px;
+    position: relative;
+    padding: 40px 15px 52px 40px;
+    @include bp(lg){
+      padding: 30px 15px 30px 20px;
+    }
+    &:hover{
+      border-color: transparent;
+      box-shadow: 0 6px 80px rgba(38, 78, 118, 0.15);
+      @include bp(xs){
+        border-color: rgba(185, 185, 185, 0.5);
+        box-shadow: none;
+      }
+    }
+  }
+  .pricing-item__title{
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    color: $black;
+    letter-spacing: -0.55px;
+  }
+  .pricing-item__list{
+    >span{
+      font-size: 16px;
+      line-height: 28px;
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      margin-bottom: 10px;
+    }
+    >ul{
+      >li{
+        position: relative;
+        padding-left: 33px;
+        color: $black;
+        margin-bottom: 22px;
+        img{
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        p{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 0;
+        }
+        div{
+          margin-top: 15px;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 34px;
+          letter-spacing: -0.9px;
+          span{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 400;
+            letter-spacing: unset;
+          }
+        }
+      }
+    }
+  }
+  .btn{
+    width: 210px;
+    margin: 34px auto 0;
+  }
+  .pricing-item__price{
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: $black;
+  }
+  .pricing-item__footnote{
+    display: block;
+    max-width: 285px;
+    margin: 28px auto 0;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+.pricing-text{
+  width: 1116px;
+  max-width: 100%;
+  margin: -20px auto 0;
+  @include bp(md){
+    margin-top: 40px;
+  }
+  >span{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 28px;
+    color: $black;
+    @include bp(xs){
+      margin-bottom: 15px;
+    }
+  }
+  >p{
+    font-size: 14px;
+    line-height: 173%;
+    margin-bottom: 28px;
+    @include bp(xs){
+      margin-bottom: 15px;
+      line-height: 150%;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.contacts-main{
+  background: url("../images/contacts-bg.svg") no-repeat center, $gradient;
+  background-size: cover;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 40px 50px 26px 72px;
+  color: #fff;
+  margin: 30px 0;
+  @include bp(lg){
+    padding: 40px 40px 26px 50px;
+  }
+  @include bp(md){
+    padding: 30px;
+  }
+  @include bp(xs){
+    padding: 30px 15px 15px;
+  }
+}
+
+.contacts-main__title{
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  @include bp(xs){
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.contacts-main__wrapper{
+  display: flex;
+  justify-content: space-between;
+  colums-gap: 30px;
+  position: relative;
+  z-index: 1;
+  @include bp(md){
+    flex-direction: column;
+  }
+}
+
+.contacts-main__left{
+  width: 490px;
+  font-size: 14px;
+  line-height: 22px;
+  @include bp(md){
+    width: 100%;
+  }
+}
+
+.contacts-main__text{
+  margin-bottom: 58px;
+  @include bp(md){
+    margin-bottom: 30px;
+  }
+  p{
+    margin-bottom: 22px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  a{
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.contacts-main__address{
+  position: relative;
+  padding-left: 23px;
+  font-size: 14px;
+  line-height: 157.5%;
+  @include bp(md){
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+  svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  strong{
+    font-weight: 700;
+    @include bp(md){
+      display: block;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    +br{
+      @include bp(md){
+        display: none;
+      }
+    }
+  }
+}
+
+.contacts-main__right{
+  width: 490px;
+  @include bp(md){
+    width: 100%;
+  }
+}
+
+.contacts-main__schedule{
+  position: relative;
+  padding-left: 31px;
+  margin-bottom: 25px;
+  @include bp(md){
+    padding-left: 30px;
+  }
+  svg{
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  span{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+  }
+  ul{
+    font-size: 14px;
+    line-height: 157.5%;
+    strong{
+      font-weight: 700;
+    }
+  }
+}
+
+.contacts-main__map{
+  border: 2px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 246px;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
