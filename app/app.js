@@ -20,7 +20,6 @@ var $ = require('jquery');
 require('bootstrap-sass');
 
 // Modules
-var Forms = require('_modules/forms');
 var Slider = require('_modules/slider');
 require('../node_modules/sumoselect/jquery.sumoselect.min.js');
 
@@ -29,7 +28,6 @@ require('_stylesheets/app.scss');
 
 // Are you ready?
 $(function() {
-  new Forms();
   new Slider();
 
   // fixed header
