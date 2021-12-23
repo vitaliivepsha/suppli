@@ -8,6 +8,8 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/blog.html');
     require('./assets/templates/layouts/article.html');
     require('./assets/templates/layouts/product.html');
+    require('./assets/templates/layouts/policy.html');
+    require('./assets/templates/layouts/terms.html');
 }
 
 // Depends
