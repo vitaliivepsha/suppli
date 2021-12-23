@@ -21,7 +21,6 @@ require('bootstrap-sass');
 
 // Modules
 var Slider = require('_modules/slider');
-require('../node_modules/sumoselect/jquery.sumoselect.min.js');
 
 // Stylesheet entrypoint
 require('_stylesheets/app.scss');
@@ -100,12 +99,6 @@ $(function() {
   $('.faq-main__header').click(function() {
     $(this).closest('.faq-main__item').find('.faq-main__body').slideToggle()
             .closest('.faq-main__item').toggleClass('active').siblings().removeClass('active').find('.faq-main__body').slideUp();
-  });
-
-  // select
-
-  $('.select').SumoSelect({
-    forceCustomRendering: true
   });
 
   // show/hide password
