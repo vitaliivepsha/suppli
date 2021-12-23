@@ -21,9 +21,6 @@ body {
   @include bp(md) {
     display: block;
   }
-  &.swal2-shown {
-    position: static;
-  }
   &.menu-opened {
     overflow: hidden;
     .mobile-menu__wrapper {
@@ -71,6 +68,13 @@ main {
   z-index: 1;
   padding-top: 136px;
   overflow-x: hidden;
+  &.login{
+    padding-top: 0;
+    &:before {
+      background: url("../images/login-bg.jpg") no-repeat center top;
+      background-size: cover;
+    }
+  }
   @include bp(md) {
     padding-top: 96px;
   }
@@ -247,7 +251,8 @@ main {
 @import "blog";
 @import "article";
 @import "product";
-@import "404";
+@import "policy";
+@import "login";
 
 // parts
 @import "page-top";
