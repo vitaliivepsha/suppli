@@ -1,0 +1,227 @@
+.pricing-attendance{
+  padding: 30px 0 50px;
+  @include bp(xs){
+    padding: 60px 0 30px;
+  }
+  .section-pretitle{
+    text-align: center;
+  }
+  .section-title{
+    text-align: center;
+    margin-bottom: 22px;
+  }
+  .pricing-descr{
+    max-width: 684px;
+    margin-bottom: 60px;
+    @include bp(xs){
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.pricing-attendance__wrapper{
+  width: 1152px;
+  max-width: 100%;
+  margin: 0 auto;
+  column-gap: 60px;
+  display: flex;
+  @include bp(md){
+    column-gap: 30px;
+  }
+  @include bp(sm){
+    flex-direction: column;
+  }
+  .pricing-attendance__item{
+    @include bp(sm){
+      margin-bottom: 30px;
+    }
+    &:last-child{
+      @include bp(sm){
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.pricing-attendance__item{
+  width: 50%;
+  padding: 48px;
+  height: inherit;
+  border: 1px solid $purple;
+  border-radius: 15px;
+  @include bp(sm){
+    width: 100%;
+    height: auto;
+  }
+  @include bp(xs){
+    padding: 26px;
+  }
+  >span{
+    display: flex;
+    margin-bottom: 15px;
+  }
+  >strong{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20.8948px;
+    line-height: 31px;
+    color: $black;
+  }
+  >p{
+    font-size: 16px;
+    line-height: 38px;
+    margin-bottom: 0;
+    @include bp(xs){
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.pricing-equipment{
+  padding: 50px 0 40px;
+  @include bp(xs){
+    padding-top: 30px;
+  }
+  .section-pretitle{
+    text-align: center;
+  }
+  .section-title{
+    text-align: center;
+    margin-bottom: 22px;
+  }
+  .pricing-descr{
+    max-width: 684px;
+    margin-bottom: 50px;
+    @include bp(xs){
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.pricing-equipment__slider{
+  margin: 0 -15px;
+  @include bp(xs){
+    padding-bottom: 80px;
+  }
+  .slick-list{
+    padding: 30px 0 110px;
+    @include bp(xs){
+      padding: 0;
+    }
+  }
+  .slick-track{
+    display: flex;
+  }
+  .slick-slide{
+    padding: 0 15px;
+  }
+  .slick-arrow{
+    position: absolute;
+    bottom: 5px;
+    transition: linear .2s;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: $gradient;
+    padding: 0;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    &:after{
+      content: '';
+      width: 12px;
+      height: 12px;
+      border: 2px solid #fff;
+      border-right: none;
+      border-top: 0;
+    }
+    &:hover{
+      background: $reverse-gradient;
+    }
+    &.slick-disabled{
+      border-color: rgba($purple, 0.3);
+      background: transparent;
+      cursor: default;
+      &:after{
+        border-color: rgba($purple, 0.3);
+      }
+    }
+    &.slick-prev{
+      left: calc(50% - 57px);
+      &:after{
+        transform: rotate(45deg);
+        margin-right: -4px;
+      }
+    }
+    &.slick-next{
+      right: calc(50% - 57px);
+      &:after{
+        transform: rotate(-135deg);
+        margin-left: -4px;
+      }
+    }
+  }
+  .slide{
+    background: #fff;
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    padding: 12px;
+    min-height: 420px;
+    @include bp(xs){
+      min-height: unset;
+    }
+    &:hover{
+      box-shadow: 0 10px 40px rgba(69, 88, 157, 0.23);
+      border-color: #F3F4F5;
+      @include bp(xs){
+        box-shadow: none;
+        border-color: #E7E7E7;
+      }
+    }
+    img{
+      width: 100%;
+      height: 207px;
+      border-radius: 5px 5px 0 0;
+      object-fit: cover;
+      @include bp(sm){
+        height: 160px;
+      }
+      @include bp(xs){
+        height: 48vw;
+      }
+    }
+    .pricing-equipment__slider-info{
+      padding: 20px 30px;
+      @include bp(sm){
+        padding: 15px 0;
+      }
+      >span{
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 9px;
+        color: $black;
+      }
+      >p{
+        font-size: 14px;
+        line-height: 163.5%;
+        margin-bottom: 22px;
+      }
+      >div{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: -0.9px;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

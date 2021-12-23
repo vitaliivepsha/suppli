@@ -12,6 +12,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/terms.html');
   require('./assets/templates/layouts/login.html');
   require('./assets/templates/layouts/signup.html');
+  require('./assets/templates/layouts/pricing.html');
 }
 
 // Depends
@@ -50,7 +51,7 @@ $(function() {
 
   $(window).scroll(function() {
     var scrolled = $(window).scrollTop();
-    if (scrolled > 100) {
+    if (scrolled > 10) {
       header.addClass('fixed');
     } else {
       header.removeClass('fixed');

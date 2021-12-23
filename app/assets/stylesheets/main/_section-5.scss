@@ -107,6 +107,26 @@
       }
     }
   }
+  .pricing-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 40px;
+    top: -19px;
+    width: 38px;
+    height: 38px;
+    background: #EFB76C;
+    border-radius: 5px;
+    @include bp(lg){
+      left: 20px;
+    }
+    @include bp(xs){
+      left: auto;
+      right: 10px;
+      top: 10px;
+    }
+  }
   .pricing-item__title{
     display: block;
     font-weight: 700;
